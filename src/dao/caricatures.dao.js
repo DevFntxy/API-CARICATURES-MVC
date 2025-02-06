@@ -19,4 +19,7 @@ caricaturesDAO.getOne = async (id_caricature) =>{
     return await Caricatures.findOne({id_caricature:id_caricature})
 }
 
+caricaturesDAO.getALL =async () =>{
+    return await Caricatures.find();
+}
 export default caricaturesDAO ;
