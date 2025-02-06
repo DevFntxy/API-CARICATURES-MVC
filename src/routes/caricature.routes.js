@@ -1,0 +1,1 @@
+//Rutas para acceder a los distintos metodos para caricatures
