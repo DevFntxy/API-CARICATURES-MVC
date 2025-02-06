@@ -8,5 +8,6 @@ router.post('/insert', caricaturesController.insert)
 router.put('/update/:id_caricature', caricaturesController.updateOne)
 router.delete('/delete/:id_caricature', caricaturesController.deleteOne)
 router.get('/getOne/:id_caricature', caricaturesController.getOne)
+router.get('/getAll', caricaturesController.getALL)
 
 export default router ;

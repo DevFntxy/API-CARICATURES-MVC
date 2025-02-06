@@ -79,4 +79,23 @@ caricaturesController.getOne=(request,response) =>{
         })
     })
 }
+
+caricaturesController.getALL=(request, response) =>{
+    caricaturesDAO.getALL()
+    .then((result) =>{
+        response.json({
+            data:{
+                message:"Todos las caricaturas : ",
+                result: result
+            }
+        })
+    })
+    .catch((error) =>{
+        response.json({
+            data:{
+                error:error
+            }
+        })
+    })
+}
 export default  caricaturesController ;
