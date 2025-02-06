@@ -2,7 +2,7 @@
  import express from 'express'
  import morgan from 'morgan'
  import ejs from 'ejs'
-
+ import caricaturesRoutes  from './src/routes/caricature.routes.js';
  const app = express (); // Para instanciar el servidor
 
  //Settings - configuracion
@@ -15,5 +15,6 @@
  app.use(express.urlencoded({extended : true}))
 
  //Routes
+ app.use('/sesniflix/caricatures', caricaturesRoutes)
 
  export default app;
